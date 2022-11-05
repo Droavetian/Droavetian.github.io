@@ -18,6 +18,20 @@
 <style>
 h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
 body {font-family: "Open Sans"}
+	
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 </head>
 <body class="w3-light-grey">
@@ -121,46 +135,24 @@ Lastly, I am an avid believer that maximizing performance is not just about how 
 		  
 		  
 		  
-
+	<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+</div>
 		  
 		  
 		  
-        <ul class="w3-ul w3-hoverable w3-white">
-          <li class="w3-center">
-            
-            <span class="w3-large">Monday</span>
-            <br>
-            <span>9-5pm</span>
         
-      
-            
-            <span class="w3-large">Tuesday</span>
-            <br>
-            <span>9-5pm</span>
-  
-          <li class="w3-padding-16">
-            
-            <span class="w3-large">Wednesday</span>
-            <br>
-            <span>9-5pm</span>
-          </li>
-          <li class="w3-padding-16">
-            
-            <span class="w3-large">Thursday</span>
-            <br>
-            <span>9-5pm</span>
-          </li>
-
-
-          <li class="w3-padding-16">
-            
-            <span class="w3-large">Friday</span>
-            <br>
-            <span>9-5pm</span>
-          </li>
-        </ul>
-      </div>
-
         </div>
 
         <div class="w3-justify">
