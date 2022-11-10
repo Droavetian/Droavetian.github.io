@@ -18,6 +18,23 @@
 <style>
 h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
 body {font-family: "Open Sans"}
+	
+	
+	.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 18d0px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+	
+	
 </style>
 </head>
 <body class="w3-light-grey">
@@ -218,16 +235,48 @@ Other quick things about me:
 	    
 	    
 	    
-	 <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Follow Me</h4>
-        </div>
+	<div class="row">
+  <div class="column">
+    <h1>16</h1>
+    <p>16 years of</p>
+	  <p>soccer experience</p>
+  </div>
+  <div class="column">
+    <h2>2</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" >
+    <h2>5</h2>
+    <p>Some text..</p>
+  </div>
+ <div class="column" >
+    <h2>1000</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+	    
+	    
+	    
+	    
+	    
+	 <div class="w3-white w3-margin row">
+        	<div class="w3-container w3-padding w3-black column">
+          		<h1>16</h1>
+	  		<p>16 years of</p>
+        	</div>
+		 
+		 <div class="w3-container w3-padding w3-black column">
+          		<h1>16</h1>
+	  		<p>16 years of</p>
+        	</div>
+		 
+		 
+		 <div class="w3-container w3-padding w3-black column">
+          		<h1>16</h1>
+	  		<p>16 years of</p>
+        	</div>
        
-        <div class="w3-container w3-xlarge w3-padding">
-          <a href="https://www.instagram.com/droavet/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-          <a href="https://www.youtube.com"><i class="fa fa-youtube-play w3-hover-opacity"> </i> </a>
-          <a href= "https://www.linkedin.com/in/dro-avetian-b6aa9b215/"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
-        </div>
+       
       </div>
       <hr>
       
